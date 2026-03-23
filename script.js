@@ -149,7 +149,6 @@ function restartQuiz() {
   resultBox.classList.add("hidden");
   quizBox.classList.add("hidden");
   startBox.classList.remove("hidden");
-
   // Clear UI text
   userDisplay.textContent = "";
   timerDisplay.textContent = "";
