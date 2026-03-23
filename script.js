@@ -11,12 +11,17 @@ const quizData = [
   },
   {
     question: "3. Which is the largest ocean in the world?",
-    options: ["Atlantic ocean", "Indian ocean", "Pacific ocean", "Arctic ocean"],
-    answer: "Pacific ocean"
+    options: ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"],
+    answer: "Pacific Ocean"
   },
   {
     question: "4. Who wrote the National Anthem of India?",
-    options: ["Mahatma Gandhi", "Rabindranath Tagore", "Jawaharlal Nehru", "Subhas Chandra Bose"],
+    options: [
+      "Mahatma Gandhi",
+      "Rabindranath Tagore",
+      "Jawaharlal Nehru",
+      "Subhas Chandra Bose"
+    ],
     answer: "Rabindranath Tagore"
   }
 ];
@@ -129,11 +134,13 @@ function showResult() {
   quizBox.classList.add("hidden");
   resultBox.classList.remove("hidden");
 
-  finalScore.textContent = username + ", your score is " + score + "/" + quizData.length;
+  finalScore.textContent =
+    username + ", your score is " + score + "/" + quizData.length;
+
   timeTaken.textContent = "Time taken: " + time + " seconds";
 }
 
-// Restart
+// Restart Quiz (Fixed)
 function restartQuiz() {
   currentQuestion = 0;
   score = 0;
@@ -145,11 +152,11 @@ function restartQuiz() {
   // Clear input field
   document.getElementById("username").value = "";
 
-  // Hide result, show start page
+  // Reset UI
   resultBox.classList.add("hidden");
   quizBox.classList.add("hidden");
   startBox.classList.remove("hidden");
-  // Clear UI text
+
   userDisplay.textContent = "";
   timerDisplay.textContent = "";
 }
