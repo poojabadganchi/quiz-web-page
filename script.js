@@ -97,5 +97,4 @@ function restartQuiz() {
   resultBox.classList.add("hidden");
   loadQuestion();
 }
-
 loadQuestion();
