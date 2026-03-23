@@ -106,6 +106,50 @@ h1 {
   cursor: pointer;
   transition: 0.3s;
 }
+
 #result-box button:hover {
   background: #15803d;
+}
+
+/* Input box */
+#username {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Timer */
+#timer {
+  font-size: 18px;
+  color: #dc2626;
+  margin-bottom: 10px;
+}
+
+/* User name */
+#user-display {
+  font-size: 18px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+/* Start Button (Welcome Page) */
+#start-box button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#start-box button:hover {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  transform: scale(1.03);
 }
